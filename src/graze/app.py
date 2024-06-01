@@ -9,7 +9,7 @@ class Graze(toga.App):
         self.webview = toga.WebView(
             on_webview_load=self.on_webview_loaded, style=Pack(flex=1)
         )
-        self.url_input = toga.TextInput(value="https://google.com/", style=Pack(flex=1))
+        self.url_input = toga.TextInput(value=self.home_page, style=Pack(flex=1))
 
         box = toga.Box(
             children=[
